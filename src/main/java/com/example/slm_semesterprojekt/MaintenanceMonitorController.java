@@ -19,4 +19,11 @@ public class MaintenanceMonitorController
         msg=m;
         return "OK";
     }
+
+    @GetMapping("/message/reset")
+    public String resetMSG()
+    {
+        msg= "Everything works as expected";
+        return "OK";
+    }
 }
