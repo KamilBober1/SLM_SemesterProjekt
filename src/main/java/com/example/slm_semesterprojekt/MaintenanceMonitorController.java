@@ -12,4 +12,11 @@ public class MaintenanceMonitorController
     public String showMSG(){
         return msg;
     }
+
+    @GetMapping("/message/set")
+    public String changeMSG(String m)
+    {
+        msg=m;
+        return "OK";
+    }
 }
